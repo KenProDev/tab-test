@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Tabs from './components/Tabs';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="App-content">
+        <Tabs tabs={['Audiences', 'Partners', 'Brands']} />
+      </div>
     </div>
   );
 }
